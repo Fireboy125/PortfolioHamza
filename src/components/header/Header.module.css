@@ -186,4 +186,13 @@ input[type="false"] {
     width: 50%;
     transform: translate(30px, -11px) rotatez(45deg);
   }
+  .center:hover:before {
+    transform: translateY(12px) rotate(135deg);
+  }
+  .center:hover:after {
+    transform: translateY(-12px) rotate(-135deg);
+  }
+  .center:hover div {
+    transform: scale(0);
+  }
 }

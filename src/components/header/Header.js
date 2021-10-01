@@ -3,12 +3,12 @@ import styles from "./Header.module.css";
 // import logo from "../../images/Portfolio.png";
 import GlobalButton from "../global Button/GlobalButton";
 const Header = () => {
-  const [hamburger, setHamburger] = useState(false);
+  const [hamburger, setHamburger] = useState("false");
   const clickHandler = () => {
-    if (hamburger === false) {
-      setHamburger(true);
+    if (hamburger === "false") {
+      setHamburger("true");
     } else {
-      setHamburger(false);
+      setHamburger("false");
     }
   };
   return (
@@ -35,9 +35,9 @@ const Header = () => {
                   Contact
                 </a>
               </li>
-              <div className={styles.navButton}>
+              <span className={styles.navButton}>
                 <GlobalButton txt="Get Started" />
-              </div>
+              </span>
               <li>
                 <label className={styles.humbergButton} onClick={clickHandler}>
                   {/* <input type={`${hamburger}`} id="check" /> */}
@@ -47,7 +47,7 @@ const Header = () => {
                 </label>
               </li>
             </ul>
-            {hamburger === true ? (
+            {hamburger === "true" ? (
               <div className={styles.wrapper}>
                 <div className={styles.wrapperItems}>
                   <p>About</p>
