@@ -1,0 +1,28 @@
+.capabilities {
+  background-color: #0e0c38;
+  padding: 110px 0;
+  z-index: 9;
+}
+.cards {
+  display: flex;
+}
+.card {
+  width: 100%;
+}
+.CapabilitiesCards {
+  display: flex;
+  justify-content: space-around;
+  flex: 33.33%;
+  flex-wrap: wrap;
+}
+.CapabilitiesCardsWrap {
+  margin-bottom: 229px;
+}
+@media screen and (max-width: 1440px) {
+  .capabilities {
+    padding: 70px 0 0;
+  }
+  .CapabilitiesCardsWrap {
+    margin-bottom: 100px;
+  }
+}

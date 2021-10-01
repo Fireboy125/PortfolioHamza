@@ -1,0 +1,199 @@
+/* .hero {
+  background-color: rgb(14, 12, 56s);
+} */
+.hero {
+  background-color: rgb(14, 12, 56);
+  position: relative;
+}
+.heroImg {
+  /* width: 590px;
+  height: 263px;
+  z-index: 100;
+  left: 16.5%; */
+  /* position: relative; */
+}
+.heroImg img {
+  width: 28%;
+  position: relative;
+  /* width: 590px; */
+  height: 263px;
+  z-index: 100;
+  left: 280px;
+}
+.heroWrapper {
+  display: flex;
+  color: #fff;
+  font-family: "Poppins";
+  /* position: relative; */
+}
+.heroLeftContent {
+  width: 50%;
+  margin: 85px 0 182px;
+  z-index: 2;
+}
+.heroLeftContentFirst {
+  font-weight: 300;
+  font-size: 41px;
+  margin: 0;
+  line-height: 61px;
+}
+.heroLeftContentHeading {
+  font-weight: bold;
+  font-size: 150px;
+  margin: 10px 0 35px;
+  line-height: 141px;
+  width: 65%;
+}
+.heroLeftContentSecond {
+  font-weight: 300;
+  font-size: 26px;
+  margin: 0px 0 48px;
+  line-height: 39px;
+}
+.heroLeftContentSecond span {
+  color: #ff0513;
+}
+.findMe {
+  margin: 10px 0 69px;
+}
+.findMeContent {
+  font-family: "Raleway";
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 15px !important;
+}
+.findMe span {
+  margin-right: 33px;
+}
+.heroRightContent {
+  margin-top: -130px;
+}
+.heroRightContent img {
+  max-width: 100%;
+  /* width: 100%; */
+  height: auto;
+}
+.hero:after {
+  background-image: url("Layer 2.png");
+  content: "";
+  position: absolute;
+  width: 105px;
+  height: 392px;
+  right: 0;
+  bottom: 0;
+}
+.hero:before {
+  background-image: url("Ellipse 1.png");
+  content: "";
+  position: absolute;
+  width: 574px;
+  height: 547px;
+  left: -8%;
+  top: 33%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1440px) {
+  .heroImg img {
+    width: 18%;
+    z-index: 1;
+  }
+  .heroLeftContentHeading {
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 500;
+  }
+  .heroRightContent {
+    z-index: 2;
+  }
+  .hero:after {
+    z-index: 1;
+  }
+  .findMe span {
+    margin-right: 15px;
+  }
+  .heroLeftContentSecond {
+    font-size: 22px;
+  }
+  .findMe span a img {
+    width: 25px;
+    height: 25px;
+  }
+  .findMeContent {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .container {
+    max-width: 1000px;
+  }
+  .heroImg img {
+    z-index: 1;
+  }
+  .heroLeftContentFirst {
+    font-size: 30px;
+  }
+  .heroLeftContentHeading {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .heroWrapper {
+    margin-top: 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .heroLeftContent {
+    margin-left: 23%;
+  }
+  .hero:before {
+    left: 20%;
+    top: 7%;
+  }
+  .heroImg {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero:before {
+    left: 6%;
+    top: 7%;
+    width: 520px;
+    height: 500px;
+    background-size: contain;
+  }
+  .heroLeftContent {
+    font-size: 16px;
+  }
+  .heroLeftContentHeading {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .heroLeftContentSecond {
+    font-size: 16px;
+  }
+  .findMeContent {
+    font-size: 18px;
+  }
+  .findMe span a img {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero:before {
+    width: 428px;
+    height: 445px;
+    background-repeat: no-repeat;
+  }
+  .hero:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero:before {
+    width: 330px;
+  }
+}

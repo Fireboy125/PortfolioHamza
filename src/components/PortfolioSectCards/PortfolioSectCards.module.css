@@ -1,0 +1,65 @@
+.portfolioCard {
+  width: 33%;
+  text-align: center;
+  color: #fff;
+  border-radius: 30px;
+}
+
+.portfolioCard {
+  position: relative;
+  width: 100%;
+}
+.image {
+  display: block;
+  width: 505px;
+  height: 510px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  /* transition: 0.5s ease; */
+  /* transition: top 2s ease; */
+  background-color: #ff0513;
+  border-radius: 40px;
+  transition: all 0.2s ease-in-out;
+}
+
+.portfolioCard:hover .overlay {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: all 1s;
+}
+.text h4 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+@media screen and (max-width: 640px) {
+  .image {
+    display: block;
+    width: 90%;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image {
+    width: 300px;
+    height: 300px;
+  }
+}

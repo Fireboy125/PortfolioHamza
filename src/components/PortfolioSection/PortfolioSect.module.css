@@ -1,0 +1,70 @@
+.portfolioSect {
+  background-color: #040221;
+  padding: 40px 0;
+}
+
+.portfolioSectWrap h2 {
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 76px;
+  position: relative;
+}
+
+.portfolioSectWrap h2::after {
+  content: "";
+  width: 345px;
+  background-color: #ff0513;
+  position: absolute;
+  height: 1px;
+  top: 41px;
+  left: 14%;
+}
+.portfolioSectCardWrapper {
+  display: flex;
+  justify-content: space-around;
+  flex: 33.33%;
+  flex-wrap: wrap;
+}
+.PortfolioSectCard {
+  margin: 30px 0 50px;
+}
+.tabs {
+  list-style: none;
+  color: #fff;
+}
+.tabs li {
+  text-decoration: none;
+  display: inline;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.tabs li:active,
+li:visited {
+  color: red;
+}
+@media screen and (max-width: 991px) {
+  .tabs {
+    text-align: center;
+  }
+  .portfolioSectWrap h2 {
+    text-align: center;
+  }
+  .portfolioSectWrap h2::after {
+    width: 170px;
+    left: 67%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .portfolioSectWrap h2::after {
+    width: 100px;
+    left: 70%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .portfolioSectWrap h2::after {
+    width: 64px;
+    left: 82%;
+  }
+}

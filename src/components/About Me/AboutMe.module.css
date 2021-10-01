@@ -1,0 +1,125 @@
+.AboutMe {
+  background-color: #040221;
+  border: none;
+  margin-top: -3px;
+  /* overflow: auto; */
+}
+
+.AboutMeWrapper {
+  display: flex;
+  padding: 197px 0 50px;
+}
+.AboutMeLeftContent {
+  color: #fff;
+  width: 50%;
+}
+.AboutMeLeftContentHeading {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 108px;
+  margin-bottom: 102px;
+  position: relative;
+  margin-top: 140px;
+}
+.AboutMeLeftContentHeading::after {
+  position: absolute;
+  content: "";
+  width: 345px;
+  height: 1px;
+  background-color: #ff0513;
+  top: 55px;
+  right: 0;
+}
+.AboutMeLeftContentHeading::before {
+  position: absolute;
+  content: "";
+  width: 345px;
+  height: 1px;
+  background-image: url();
+  top: 55px;
+  right: 0;
+}
+.AboutMeLeftContentPara {
+  width: 98%;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 55px;
+  margin-bottom: 87px;
+}
+.AboutMeRightContent {
+  background-color: rgb(14, 12, 56);
+  padding: 74px 66px;
+  width: 48%;
+}
+.AboutMeRightContent img {
+  width: 100%;
+  height: 807px;
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 1440px) {
+  .AboutMeLeftContentHeading::after {
+    width: 40%;
+  }
+  .AboutMeRightContent {
+    padding: 50px 50px;
+  }
+  .AboutMeRightContent img {
+    height: 650px;
+  }
+  .AboutMeWrapper {
+    padding: 100px 0 50px;
+  }
+  .AboutMeLeftContentPara {
+    margin-bottom: 32px;
+    font-size: 18px;
+  }
+  .AboutMeLeftContentHeading {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .AboutMeWrapper {
+    flex-direction: column;
+    padding: 0 0 0;
+    align-items: center;
+  }
+  .AboutMeLeftContent {
+    margin-bottom: 30px;
+    width: 80%;
+  }
+  .AboutMeRightContent {
+    width: 80%;
+  }
+  .AboutMeLeftContentPara {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .AboutMeLeftContentHeading {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 9px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .AboutMeLeftContentHeading::after {
+    width: 32%;
+    right: -35px;
+  }
+  .AboutMeLeftContentPara {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .AboutMeRightContent {
+    padding: 20px 20px;
+  }
+  .AboutMeRightContent img {
+    height: 400px !important;
+  }
+}
